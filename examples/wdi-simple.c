@@ -40,9 +40,9 @@
  * Change these values according to your device if
  * you don't want to provide parameters
  */
-#define DESC        "Microsoft XBox Controller Type S"
-#define VID         0x045E
-#define PID         0x0289
+#define DESC        "STM32 DownLoad Firmware Update"
+#define VID         0x0483
+#define PID         0xDF11
 #define INF_NAME    "usb_device.inf"
 #define DEFAULT_DIR "usb_driver"
 
