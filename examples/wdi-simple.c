@@ -85,7 +85,7 @@ HWND GetConsoleHwnd(void)
 	char pszOldWindowTitle[128];
 
 	GetConsoleTitleA(pszOldWindowTitle, 128);
-	wsprintfA(pszNewWindowTitle,"%d/%d", GetTickCount(), GetCurrentProcessId());
+	wsprintfA(pszNewWindowTitle,"DFU %d/%d", GetTickCount(), GetCurrentProcessId());
 	SetConsoleTitleA(pszNewWindowTitle);
 	Sleep(40);
 	hwndFound = FindWindowA(NULL, pszNewWindowTitle);
